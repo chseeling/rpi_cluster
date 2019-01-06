@@ -29,8 +29,18 @@ Optional
 
 ## Preparing SSD cards
 
-Install [Etcher](https://www.balena.io/etcher/) 
-
 Download [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/) image. I used
 
     2018-11-13-raspbian-stretch-full.zip
+
+Flash image to SSD card using [Etcher](https://www.balena.io/etcher/) or equivalent. After completion add two files to the boot partition:
+* ssh
+* wpa_supplicant.conf  containing
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="YOUR_NETWORK_NAME"
+    psk="YOUR_PASSWORD"
+    key_mgmt=WPA-PSK
+}
+```
