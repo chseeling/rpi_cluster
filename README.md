@@ -171,3 +171,9 @@ On master node
 
     sudo apt-get install nfs-server
     
+For each slave/worker node:
+```
+ssh clustpi05 sudo apt-get install nfs-common
+ssh clustpi05 sudo mkdir /mnt/nfs
+ssh clustpi05 sudo chown -R pi:pi /mnt/nfs
+'''
