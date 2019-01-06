@@ -162,3 +162,12 @@ For example, the MPI setup benefits from that, as I will show later.
 Plug USB drive into master and manually mount:
 
     sudo mount -o uid=pi,gid=pi /dev/sda1 /mnt/usb
+
+If you want to automatically mount on boot you’ll need to add the following to the /etc/fstab file:
+
+    /dev/sda1 /mnt/usb auto defaults,user 0 1
+    
+On master node
+
+    sudo apt-get install nfs-server
+    
