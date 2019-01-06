@@ -64,12 +64,11 @@ Reboot.
 
 ### Assign static IP address to wlan0
 Choose whatever IP address is free on your router. I chose 192.168.0.27
-'''
+```
 sudo nano /etc/dhcpcd.conf
 #adding lines
 interface wlan0
 static ip_address=192.168.0.27
 static routers=192.168.0.1
 static domain_name_servers=8.8.8.8
-'''
-
+```
