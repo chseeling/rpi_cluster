@@ -18,7 +18,7 @@ Documentation of
 
 1x
 * Edimax ES-5500G V3 5-Port Gigabit Switch
-* Comsol 6 Port Desktop USB Charger
+* Comsol 6 Port Desktop USB Charger  (60W, 12A, output 2.4A per port)
 * Clear Acrylic 5 Layer Cluster Case Shelf 
 
 
