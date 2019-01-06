@@ -104,7 +104,7 @@ The setup is similar to the master node, except for the DHCP server setup, which
 The wifi is only needed temporarily to find the mac address.
 
 I also added the following to /etc/hosts file of each node (this may be redundant):
-'''
+```
 192.168.50.1    clustpi01.local
 192.168.50.1    clustpi01
 192.168.50.12   clustpi02.local
@@ -115,4 +115,4 @@ I also added the following to /etc/hosts file of each node (this may be redundan
 192.168.50.14   clustpi04
 192.168.50.15   clustpi05.local
 192.168.50.15   clustpi05
-'''
+```
