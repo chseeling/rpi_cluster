@@ -148,3 +148,11 @@ To test try logging in with
     $ ssh clustpi02
     or
     $ ssh pi@clustpi02
+
+We have now completed the basic setup of the cluster.
+Next we optionally set up a NFS mount of a USB drive on the master, to be shared with the slaves.
+
+## NFS setup
+A NFS mounted drive is useful for making files automatically available across the nodes of the cluster.
+For example, the MPI setup benefits from that, as I will show later.
+
