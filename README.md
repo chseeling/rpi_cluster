@@ -20,3 +20,8 @@ Documentation of
 * Edimax ES-5500G V3 5-Port Gigabit Switch
 * Comsol 6 Port Desktop USB Charger
 * Clear Acrylic 5 Layer Cluster Case Shelf 
+
+
+Optional
+* USB SSD or USB stick for NFS
+
