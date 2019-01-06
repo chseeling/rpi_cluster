@@ -44,3 +44,13 @@ network={
     key_mgmt=WPA-PSK
 }
 ```
+## Booting and configuring Master node
+
+Insert SSD card and power up node that will become master node.
+
+    sudo raspi-config
+
+* change node name to clustpi01
+* expand file system
+
+Repoot.
