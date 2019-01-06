@@ -2,10 +2,11 @@
 Hadoop, Spark, MPI
 
 
-
 Documentation of
 * Construction of a 5-node Raspberry PI 3B+ cluster.
 * Installation of Hadoop File System, Spark, Thrift Server, MPI
+
+**Important Note: Instructions are just what worked from me, they are not optimised, nor can I guarantee that they will work for you. Do must do your own research and apply what suits your setuup and requirements.**
 
 ![Assembled cluster](https://github.com/chseeling/rpi_cluster/blob/master/images/20190106_rpi_cluster.jpg)
 
@@ -26,6 +27,10 @@ Documentation of
 Optional
 * USB SSD or USB stick for NFS
 
+## Tools
+Laptop or Desktop (I used a Windows 10 laptop)
+Putty
+Access to wifi router.
 
 ## Preparing SSD cards
 
@@ -47,6 +52,8 @@ network={
 ## Booting and configuring Master node
 
 Insert SSD card and power up node that will become master node.
+Find the IP of the new node by checking the wifi router (there are many other ways to find the IP).
+Use putty and ssh into node using IP, user:pi, password: raspberry
 
     sudo raspi-config
 
