@@ -26,3 +26,7 @@ Documentation of
 Optional
 * USB SSD or USB stick for NFS
 
+
+## Preparing SSD cards
+
+Install [Etcher](https://www.balena.io/etcher/) 
