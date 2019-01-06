@@ -7,7 +7,7 @@ Documentation of
 * Construction of a 5-node Raspberry PI 3B+ cluster.
 * Installation of Hadoop File System, Spark, Thrift Server, MPI
 
-![Assembled cluster] https://github.com/chseeling/rpi_cluster/blob/master/images/20190106_rpi_cluster.jpg
+![Assembled cluster](https://github.com/chseeling/rpi_cluster/blob/master/images/20190106_rpi_cluster.jpg)
 
 ## Part List
 
