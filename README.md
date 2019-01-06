@@ -7,7 +7,7 @@ Documentation of
 * Installation of Hadoop File System, Spark, Thrift Server, MPI
 
 The cluster will have 1 master node (clustpi01) and 4 slave nodes (clustpi02-05).
-Only the master node wll be connected to the home wifi router.
+Only the master node will be connected to the home wifi router.
 The slaves nodes and the master node are connected via a switch and they form a subnet with the master being a DHCP server and gateway.
 
 **Important Note: Instructions are just what worked from me, they are not optimised, nor can I guarantee that they will work for you. You must do your own research and apply what suits your setuup and requirements.**
@@ -153,6 +153,8 @@ We have now completed the basic setup of the cluster.
 Next we optionally set up a NFS mount of a USB drive on the master, to be shared with the slaves.
 
 ## NFS setup
+Following https://makezine.com/projects/build-a-compact-4-node-raspberry-pi-cluster/
+
 A NFS mounted drive is useful for making files automatically available across the nodes of the cluster.
 For example, the MPI setup benefits from that, as I will show later.
 
