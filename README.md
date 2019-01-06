@@ -133,7 +133,7 @@ Nmap scan report for clustpi05.local (192.168.50.15)
 Host is up (0.0021s latency).
 Nmap done: 256 IP addresses (5 hosts up) scanned in 2.98 seconds
 ```
-## Setup password;ess ssh access for each node to each node for user pi
+## Setup passwordless ssh access for each node to each node for user pi
 Following https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
 Creating a public and private key pair
 
@@ -155,4 +155,7 @@ Next we optionally set up a NFS mount of a USB drive on the master, to be shared
 ## NFS setup
 A NFS mounted drive is useful for making files automatically available across the nodes of the cluster.
 For example, the MPI setup benefits from that, as I will show later.
+
+    mkdir  /mnt/usb
+    sudo chown -R pi:pi /mnt/usb
 
