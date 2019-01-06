@@ -53,4 +53,4 @@ Insert SSD card and power up node that will become master node.
 * change node name to clustpi01
 * expand file system
 
-Repoot.
+Reboot.
