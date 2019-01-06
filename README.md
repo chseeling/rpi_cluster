@@ -133,3 +133,18 @@ Nmap scan report for clustpi05.local (192.168.50.15)
 Host is up (0.0021s latency).
 Nmap done: 256 IP addresses (5 hosts up) scanned in 2.98 seconds
 ```
+## Setup password;ess ssh access for each node to each node for user pi
+Following https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
+Creating a public and private key pair
+
+    $ ssh-keygen
+
+Accept all the defaults.
+Then run the following command for each of the other nodes to install the public key as an authorized key on the other nodes.
+
+    $ ssh-copy-id pi@clustpi02
+To test try logging in with
+
+    $ ssh clustpi02
+    or
+    $ ssh pi@clustpi02
