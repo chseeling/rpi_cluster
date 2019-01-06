@@ -159,3 +159,6 @@ For example, the MPI setup benefits from that, as I will show later.
     mkdir  /mnt/usb
     sudo chown -R pi:pi /mnt/usb
 
+Plug USB drive into master and manually mount:
+
+    sudo mount -o uid=pi,gid=pi /dev/sda1 /mnt/usb
