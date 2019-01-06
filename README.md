@@ -77,3 +77,24 @@ static routers=192.168.0.1
 static domain_name_servers=8.8.8.8
 ```
 sudo reboot
+
+### Set up DHCP and wifi bridge on master
+I followed https://pimylifeup.com/raspberry-pi-wifi-bridge/
+
+My /etc/dnsmasq.conf  looks like this (xx need reflect your actual mac address)
+
+```
+# General configuration
+interface=eth0
+listen-address=192.168.50.1
+bind-interfaces
+domain-needed
+bogus-priv
+domain=cluster
+dhcp-range=192.168.50.10,192.168.50.254,48h
+dhcp-authoritative
+dhcp-host=b8:27:eb:xx:xx:xx,192.168.50.12
+dhcp-host=b8:27:eb:xx:xx:xx,192.169.50.13
+dhcp-host=b8:27:eb:xx:xx:xx,192,169.50.14
+dhcp-host=b8:27:eb:xx:xx:xx,192.169.50.15
+```
