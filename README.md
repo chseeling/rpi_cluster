@@ -118,5 +118,18 @@ I also added the following to /etc/hosts file of each node (this may be redundan
 ```
 
 Once network setup is complete, check with:
-
-    nmap -sn 192.168.50.0/24
+'''
+$ nmap -sn 192.168.50.0/24
+Starting Nmap 7.40 ( https://nmap.org ) at 2019-01-06 11:31 GMT
+Nmap scan report for clustpi01.local (192.168.50.1)
+Host is up (0.0019s latency).
+Nmap scan report for clustpi02.local (192.168.50.12)
+Host is up (0.0023s latency).
+Nmap scan report for clustpi03.local (192.168.50.13)
+Host is up (0.00071s latency).
+Nmap scan report for clustpi04.local (192.168.50.14)
+Host is up (0.00066s latency).
+Nmap scan report for clustpi05.local (192.168.50.15)
+Host is up (0.0021s latency).
+Nmap done: 256 IP addresses (5 hosts up) scanned in 2.98 seconds
+'''
