@@ -10,4 +10,13 @@ Documentation of
 
 ## Part List
 
-* 5 x Raspberry Pi B+
+5x
+* Raspberry Pi B+
+* 64MB SD Card
+* USB-C to USB-A cable
+* Ethernet Patch Lan Cable (1 foot)
+
+1x
+* Edimax ES-5500G V3 5-Port Gigabit Switch
+* Comsol 6 Port Desktop USB Charger
+* Clear Acrylic 5 Layer Cluster Case Shelf 
