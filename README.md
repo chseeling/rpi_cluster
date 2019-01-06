@@ -176,4 +176,16 @@ For each slave/worker node:
 ssh clustpi05 sudo apt-get install nfs-common
 ssh clustpi05 sudo mkdir /mnt/nfs
 ssh clustpi05 sudo chown -R pi:pi /mnt/nfs
-'''
+```
+
+On master edit /etc/exports
+```
+$ sudo su
+# add
+/mnt/usb clustpi02.local(rw,sync)
+/mnt/usb clustpi03.local(rw,sync)
+/mnt/usb clustpi04.local(rw,sync)
+/mnt/usb clustpi05.local(rw,sync)
+# the run
+$ exportfs -ra
+```
