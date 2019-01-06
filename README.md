@@ -116,3 +116,7 @@ I also added the following to /etc/hosts file of each node (this may be redundan
 192.168.50.15   clustpi05.local
 192.168.50.15   clustpi05
 ```
+
+Once network setup is complete, check with:
+
+    nmap -sn 192.168.50.0/24
