@@ -32,4 +32,5 @@ Optional
 Install [Etcher](https://www.balena.io/etcher/) 
 
 Download [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/) image. I used
+
     2018-11-13-raspbian-stretch-full.zip
