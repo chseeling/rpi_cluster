@@ -191,3 +191,8 @@ $ sudo su
 # the run
 $ exportfs -ra
 ```
+
+
+Check status of services with
+
+    service --status-all
