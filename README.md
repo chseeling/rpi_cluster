@@ -171,7 +171,7 @@ If you want to automatically mount on boot you’ll need to add the following to
     
 On master node
 
-    sudo apt-get install nfs-server
+    sudo apt-get install nfs-kernel-server
     
 For each slave/worker node:
 ```
