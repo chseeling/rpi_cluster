@@ -194,9 +194,9 @@ $ exportfs -ra
 
 On clients
 ```
-ssh clustpi02.local sudo apt-get install nfs-common
-ssh clustpi02.local sudo mkdir /mnt/nfs
-ssh clustpi02.local sudo chown -R pi:pi /mnt/nfs
+ssh clustpi02 sudo apt-get install nfs-common
+ssh clustpi02 sudo mkdir /mnt/nfs
+ssh clustpi02 sudo chown -R pi:pi /mnt/nfs
 ```
 
 Check status of services with
