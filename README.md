@@ -199,6 +199,10 @@ ssh clustpi02 sudo mkdir /mnt/nfs
 ssh clustpi02 sudo chown -R pi:pi /mnt/nfs
 ```
 
+## Install autofs
+
+    sudo apt-get install autofs
+    
 Check status of services with
 
     service --status-all
