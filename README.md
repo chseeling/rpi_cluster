@@ -18,7 +18,7 @@ The slaves nodes and the master node are connected via a switch and they form a 
 
 5x
 * Raspberry Pi B+
-* 64MB SD Card
+* 64MB SD Card (Micro SDXC Memory Card)
 * USB-C to USB-A cable
 * Ethernet Patch Lan Cable (1 foot)
 
@@ -199,10 +199,23 @@ ssh clustpi02 sudo mkdir /mnt/nfs
 ssh clustpi02 sudo chown -R pi:pi /mnt/nfs
 ```
 
-## Install autofs
+## Install autofs on each node
 
     sudo apt-get install autofs
+ 
+ to /etc/auto.master add at end:
+
+    /mnt/nfs        /etc/auto.nfs
+
+
+create file /etc/auto.nfs and add:
+
+    usb    -rw,soft clustpi01.local:/mnt/usb
+
     
 Check status of services with
 
     service --status-all
+
+
+# Install and test MPI
