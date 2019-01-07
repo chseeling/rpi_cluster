@@ -211,6 +211,9 @@ ssh clustpi02 sudo chown -R pi:pi /mnt/nfs
 create file /etc/auto.nfs and add:
 
     usb    -rw,soft clustpi01.local:/mnt/usb
+run    
+    
+    sudo /etc/init.d/autofs restart
 
     
 Check status of services with
