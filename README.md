@@ -221,4 +221,4 @@ Check status of services with
     service --status-all
 
 
-### Next Install and test MPI
+### [Next Install and Test MPI](https://github.com/chseeling/rpi_cluster/blob/master/MPI.md)
