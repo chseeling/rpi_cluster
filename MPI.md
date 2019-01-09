@@ -94,10 +94,13 @@ For example I used N=12992, NB = 224, P=5 and Q=4, therefor P*Q = 20
     mpiexec -f ~/mpich-3.3/machinefile -n 20 ./xhpl_script
 
 check nodes by ssh-ing into node and running htop, you should see all 4 core at close to 100% 
-check temperature with, for example node 3 got up to 84decC. Note I have no attution heatsinks installed (something to explore).
+
+check temperature with, 
 
     /opt/vc/bin/vcgencmd measure_temp
-    
+
+for example node 3 got up to 84decC. Note, I have no additional heatsinks installed (something to explore).
+
 check cpu frequencies with
 
     sudo cat /sys/devices/system/cpu/cpu[0-3]/cpufreq/cpuinfo_cur_f
