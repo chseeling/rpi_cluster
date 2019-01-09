@@ -44,5 +44,39 @@ tar xf hpl-2.3.tar.gz
 cd hpl-2.3/setup
 sh make_generic
 cd ..
- cp setup/Make.UNKNOWN Make.rpi
+cp setup/Make.UNKNOWN Make.rpi
 ```
+
+Adjust the Make.rpi file
+
+    nano Make.rpi
+
+```
+ARCH         = rpi
+#
+# ----------------------------------------------------------------------
+# - HPL Directory Structure / HPL library ------------------------------
+# ----------------------------------------------------------------------
+#
+TOPdir       = $(HOME)/hpl-2.3
+INCdir       = $(TOPdir)/include
+BINdir       = $(TOPdir)/bin/$(ARCH)
+LIBdir       = $(TOPdir)/lib/$(ARCH)
+#
+HPLlib       = $(LIBdir)/libhpl.a
+#
+# ----------------------------------------------------------------------
+# - Message Passing library (MPI) --------------------------------------
+# ----------------------------------------------------------------------
+# MPinc tells the  C  compiler where to find the Message Passing library
+# header files,  MPlib  is defined  to be the name of  the library to be
+# used. The variable MPdir is only used for defining MPinc and MPlib.
+#
+MPdir        = /home/pi/mpich-install
+MPinc        = -I $(MPdir)/include
+MPlib        = $(MPdir)/lib/libmpich.so
+```
+run
+
+    make arch=rpi
+    export LD_LIBRARY_PATH=/home/pi/mpich-install/lib
