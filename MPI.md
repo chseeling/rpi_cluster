@@ -32,3 +32,5 @@ cp cpi /mnt/nfs/usb
 cd /mnt/nfs/usb
 mpiexec -n 4 -f ~/mpich-3.3/machinefile /mnt/nfs/usb/cpi
 ```
+## Running Linpack benchmark
+following https://www.howtoforge.com/tutorial/hpl-high-performance-linpack-benchmark-raspberry-pi/
