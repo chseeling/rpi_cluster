@@ -97,6 +97,10 @@ check nodes by ssh-ing into node and running htop, you should see all 4 core at 
 check temperature with, for example node 3 got up to 84decC. Note I have no attution heatsinks installed (something to explore).
 
     /opt/vc/bin/vcgencmd measure_temp
+    
+check cpu frequencies with
+
+    sudo cat /sys/devices/system/cpu/cpu[0-3]/cpufreq/cpuinfo_cur_f
 
 giving the following result
 ```
