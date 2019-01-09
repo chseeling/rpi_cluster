@@ -129,5 +129,6 @@ power draw of Pi 3 B+ under load is given as 5.67 W.)
 The Raspberry Pi 3, has a quad-core ARM Cortex-A53 processor.
 Comparing with benchmarks https://hackaday.com/2016/03/01/pi-3-benchmarks-the-marketing-hype-is-true/
 
-Raspberry PI 3 at 1.2 GHz is performating at 192 MFLOPS. Scaling to 5 nodes at 1.4 Ghz gives 1.1 Gflops.
+Raspberry PI 3 at 1.2 GHz is performing at 192 MFLOPS. Scaling to 5 nodes at 1.4 Ghz gives 1.1 Gflops.
+Very interested hear if you can get higher performance for this test on a cluster of RPI 3B+.
 
