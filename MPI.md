@@ -40,9 +40,9 @@ Download source from
      http://www.netlib.org/benchmark/hpl/
      
 ```
-tar xf hpl-2.1.tar.gz
- cd hpl-2.1/setup
- sh make_generic
- cd ..
+tar xf hpl-2.3.tar.gz
+cd hpl-2.3/setup
+sh make_generic
+cd ..
  cp setup/Make.UNKNOWN Make.rpi
 ```
