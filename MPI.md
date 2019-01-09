@@ -114,3 +114,9 @@ WR11C2R4       12992   224     5     4            1202.16             1.2163e+00
 ```
 
 I checked the power consumption and the during the test the power of the cluster peaks to about 25W from an idle power of 13W.
+
+The Raspberry Pi 3, has a quad-core ARM Cortex-A53 processor.
+Comparing with benchmarks https://hackaday.com/2016/03/01/pi-3-benchmarks-the-marketing-hype-is-true/
+
+Raspberry PI 3 at 1.2 GHz is performating at 192 MFLOPS. Scaling to 5 nodes at 1.4 Ghz gives 1.1 Gflops.
+
