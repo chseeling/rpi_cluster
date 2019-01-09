@@ -34,3 +34,15 @@ mpiexec -n 4 -f ~/mpich-3.3/machinefile /mnt/nfs/usb/cpi
 ```
 ## Running Linpack benchmark
 following https://www.howtoforge.com/tutorial/hpl-high-performance-linpack-benchmark-raspberry-pi/
+
+Download source from
+
+     http://www.netlib.org/benchmark/hpl/
+     
+```
+tar xf hpl-2.1.tar.gz
+ cd hpl-2.1/setup
+ sh make_generic
+ cd ..
+ cp setup/Make.UNKNOWN Make.rpi
+```
