@@ -112,8 +112,16 @@ T/V                N    NB     P     Q               Time                 Gflops
 --------------------------------------------------------------------------------
 WR11C2R4       12992   224     5     4            1202.16             1.2163e+00
 ```
+and
+```
+
+```
+
+
 
 I checked the power consumption and the during the test the power of the cluster peaks to about 25W from an idle power of 13W.
+(in ref https://www.raspberrypi.org/magpi/raspberry-pi-3bplus-specs-benchmarks/ 
+power draw of Pi 3 B+ under load is given as 5.67 W.)
 
 The Raspberry Pi 3, has a quad-core ARM Cortex-A53 processor.
 Comparing with benchmarks https://hackaday.com/2016/03/01/pi-3-benchmarks-the-marketing-hype-is-true/
