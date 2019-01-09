@@ -222,3 +222,5 @@ Check status of services with
 
 
 ### [Next Install and Test MPI](https://github.com/chseeling/rpi_cluster/blob/master/MPI.md)
+or
+### Next [Install and Test Hadoop File System](https://github.com/chseeling/rpi_cluster/blob/master/HDFS.md)
