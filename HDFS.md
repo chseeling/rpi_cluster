@@ -31,10 +31,10 @@ cd ~
 wget -c -O hadoop.tar.gz https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
 sudo tar xvf hadoop.tar.gz --directory=/opt/hadoop --exclude=hadoop-2.9.2/share/doc --strip 1
     
- sudo vi /opt/hadoop/etc/hadoop/slaves
- clustpi02
- clustpi03
- clustpi04
- clustpi05
+sudo vi /opt/hadoop/etc/hadoop/slaves
+clustpi02
+clustpi03
+clustpi04
+clustpi05
 ```
  
