@@ -132,3 +132,5 @@ Comparing with benchmarks https://hackaday.com/2016/03/01/pi-3-benchmarks-the-ma
 Raspberry PI 3 at 1.2 GHz is performing at 192 MFLOPS. Scaling to 5 nodes at 1.4 Ghz gives 1.1 Gflops.
 Very interested hear if you can get higher performance for this test on a cluster of RPI 3B+.
 
+
+### Next [Install and Test Hadoop File System](https://github.com/chseeling/rpi_cluster/blob/master/HDFS.md)
