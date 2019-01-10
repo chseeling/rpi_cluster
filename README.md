@@ -10,7 +10,7 @@ The cluster will have 1 master node (clustpi01) and 4 slave nodes (clustpi02-05)
 Only the master node will be connected to the home wifi router.
 The slaves nodes and the master node are connected via a switch and they form a subnet with the master being a DHCP server and gateway.
 
-**Important Note: Instructions are just what worked from me, they are not optimised, nor can I guarantee that they will work for you. You must do your own research and apply what suits your setuup and requirements.**
+**Important Note: Instructions are just what worked from me, they are not optimised, nor can I guarantee that they will work for you. You must do your own research and apply what suits your setup and requirements.**
 
 ![Assembled cluster](https://github.com/chseeling/rpi_cluster/blob/master/images/20190106_rpi_cluster.jpg)
 
