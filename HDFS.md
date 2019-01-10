@@ -117,7 +117,7 @@ Run
 The warning can be ignored for now, later we will recompile the hadoop native library to address this warning.
 
 ### Troubleshooting
-Initially I git the error 
+Initially I got the error 
 
     error: Incompatible clusterIDs 
     
@@ -126,7 +126,7 @@ cd /opt/hadoop/logs/
 less hadoop-pi-datanode-clustpi02.log
 ```
     
-To resolve I followed  https://stackoverflow.com/questions/22316187/datanode-not-starts-correctly
+To resolve, I followed  https://stackoverflow.com/questions/22316187/datanode-not-starts-correctly
 
 run on all nodes
 
