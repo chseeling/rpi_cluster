@@ -40,7 +40,7 @@ clustpi05
 
     sudo vi /opt/hadoop/etc/hadoop/core-site.xml
  
-'''
+```
 <configuration>
  <property>
         <name>fs.default.name</name>
