@@ -112,7 +112,7 @@ To stop
 Run
     hdfs dfsadmin -report
 
-
+[! output](https://github.com/chseeling/rpi_cluster/blob/master/images/hdfs_dfsadmin%20_report.jpg)
 
 ### Troubleshooting
 Initially I git the error 
