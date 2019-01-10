@@ -52,3 +52,32 @@ clustpi05
     </property>
 </configuration>
 ```
+
+    sudo vi /opt/hadoop/etc/hadoop/hdfs-site.xml
+
+```
+<configuration>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/opt/hadoop_tmp/hdfs/datanode</value>
+        <final>true</final>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>/opt/hadoop_tmp/hdfs/namenode</value>
+        <final>true</final>
+    </property>
+    <property>
+        <name>dfs.namenode.http-address</name>
+        <value>clustpi01:50070</value>
+    </property>
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+    </property>
+    <property>
+        <name>dfs.datanode.du.reserved</name>
+        <value>3221225472</value>
+    </property>
+</configuration>
+```
