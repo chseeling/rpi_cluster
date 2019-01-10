@@ -109,6 +109,10 @@ To stop
 
     stop-dfs.sh
     
+Run
+    hdfs dfsadmin -report
+
+
 
 ### Troubleshooting
 Initially I git the error 
