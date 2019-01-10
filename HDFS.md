@@ -114,6 +114,8 @@ Run
 
 ![output](https://github.com/chseeling/rpi_cluster/blob/master/images/hdfs_dfsadmin%20_report.jpg)
 
+The warning can be ignored for now, later we will recompile the hadoop native library to address this warning.
+
 ### Troubleshooting
 Initially I git the error 
 
