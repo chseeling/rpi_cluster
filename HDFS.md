@@ -81,3 +81,16 @@ clustpi05
     </property>
 </configuration>
 ```
+
+Copy  /opt/hadoop/ to datanodes
+```
+$ for SERVER in clustpi02 clustpi03 clustpi04 clustpi05
+  do
+      sudo rsync --archive \
+                 --one-file-system \
+                 --partial \
+                 --progress \
+                 --compress \
+                 /opt/hadoop/ $SERVER:/opt/hadoop/
+  done
+```
