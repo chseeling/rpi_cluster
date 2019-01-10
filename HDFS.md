@@ -16,7 +16,8 @@ On all slave (data) nodes:
 
 On master (name) node
 
-    ssh clustpi01 "sudo mkdir -p /opt/hadoop_tmp/hdfs/namenode"
+    sudo mkdir -p /opt/hadoop_tmp/hdfs/namenode
+    sudo apt-get install mysql-server
 
 For all nodes:
 ```
@@ -24,3 +25,16 @@ ssh clustpi05 "sudo chown -R pi:pi /opt/hadoop"
 ssh clustpi05 "sudo chown -R pi:pi /opt/hadoop_tmp"
 ```
 
+Download the binaries (later I will show how to compile the code, so skip to that section if your prefer)
+```
+cd ~
+wget -c -O hadoop.tar.gz https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
+sudo tar xvf hadoop.tar.gz --directory=/opt/hadoop --exclude=hadoop-2.9.2/share/doc --strip 1
+    
+ sudo vi /opt/hadoop/etc/hadoop/slaves
+ clustpi02
+ clustpi03
+ clustpi04
+ clustpi05
+```
+ 
