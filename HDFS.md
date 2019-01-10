@@ -40,3 +40,15 @@ clustpi05
 
     sudo vi /opt/hadoop/etc/hadoop/core-site.xml
  
+'''
+<configuration>
+ <property>
+        <name>fs.default.name</name>
+        <value>hdfs://clustpi01:9000/</value>
+    </property>
+    <property>
+        <name>fs.default.FS</name>
+        <value>hdfs://clustpi01:9000/</value>
+    </property>
+</configuration>
+```
