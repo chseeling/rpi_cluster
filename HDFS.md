@@ -37,4 +37,6 @@ clustpi03
 clustpi04
 clustpi05
 ```
+
+    sudo vi /opt/hadoop/etc/hadoop/core-site.xml
  
