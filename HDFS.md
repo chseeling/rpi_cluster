@@ -94,3 +94,8 @@ $ for SERVER in clustpi02 clustpi03 clustpi04 clustpi05
                  /opt/hadoop/ $SERVER:/opt/hadoop/
   done
 ```
+
+
+Format the filesystem
+
+    hdfs namenode -format
