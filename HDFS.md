@@ -99,3 +99,34 @@ $ for SERVER in clustpi02 clustpi03 clustpi04 clustpi05
 Format the filesystem
 
     hdfs namenode -format
+
+
+You should now be able to successfully start the distributed file system with:
+
+    start-dfs.sh
+
+To stop
+
+    stop-dfs.sh
+    
+
+### Troubleshooting
+Initially I git the error 
+
+    error: Incompatible clusterIDs 
+    
+```
+cd /opt/hadoop/logs/
+less hadoop-pi-datanode-clustpi02.log
+```
+    
+To resolve I followed  https://stackoverflow.com/questions/22316187/datanode-not-starts-correctly
+
+run on all nodes
+
+    ssh clustpi05 rm -rf /opt/hadoop_tmp/hdfs/datanode/*
+
+then re-format
+
+    /opt/hadoop/bin/hdfs namenode -format
+
