@@ -26,6 +26,55 @@ wget -c -O hive.tar.gz http://mirror.ventraip.net.au/apache/hive/hive-3.1.1/apac
 sudo mkdir -p /opt/hive 
 sudo tar xvf hive.tar.gz --directory=/opt/hive --exclude=apache-hive-3.1.1-bin/ql/src/test --strip 1
 ```
+Configuring:
+
+    sudo vi /opt/hive/conf/hive-site.xml
+    
+```
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://localhost/metastore?createDatabaseIfNotExist=true</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.jdbc.Driver</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>hive</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>hive</value>
+    </property>
+    <property>
+        <name>datanucleus.autoCreateSchema</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>datanucleus.fixedDatastore</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>datanucleus.autoCreateTables</name>
+        <value>True</value>
+    </property>
+<property>
+    <name>hive.metastore.schema.verification</name>
+    <value>false</value>
+</property>
+<property>
+  <name>hive.metastore.uris</name>
+  <value>thrift://192.168.50.1:9083</value>
+  <description>IP address (or fully-qualified domain name) and port of the metastore host</description>
+</property>
+</configuration>
+
+```
+
 
 Installing the mysql-java connector:
 
