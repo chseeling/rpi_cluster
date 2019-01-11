@@ -72,3 +72,11 @@ Launch PySpark
     $ pyspark
 
 ![PySparkLaunch](https://github.com/chseeling/rpi_cluster/blob/master/images/PySpark.PNG)
+
+Checking if Hive metastore integration with Spark works:
+
+![Hive metastore](https://github.com/chseeling/rpi_cluster/blob/master/images/Spark_HIVE_metastore.PNG)
+Note: The initial setup will not have the tables lsted here.
+
+
+
