@@ -27,4 +27,13 @@ sudo mkdir -p /opt/hive
 sudo tar xvf hive.tar.gz --directory=/opt/hive --exclude=apache-hive-3.1.1-bin/ql/src/test --strip 1
 ```
 
-schematool -dbType mysql -initSchema
+Installing the mysql-java connector:
+
+     sudo wget -c http://central.maven.org/maven2/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar  -P /opt/hive/lib/
+ 
+Run to initialize schema in the DB 
+    schematool -dbType mysql -initSchema
+
+To launch hive metastore, run
+
+    hive --service metastore &
