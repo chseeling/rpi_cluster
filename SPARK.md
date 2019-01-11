@@ -34,3 +34,13 @@ hdfs dfs -put ~/spark-libs.jar /spark-libs/
 Checking with hdfs dfs -ls
 
     drwxr-xr-x   - pi supergroup          0 2018-12-27 11:27 /spark-libs
+
+Now configure spark:
+
+    sudo vi /opt/spark/conf/spark-defaults.conf
+    
+    SPARK_EXECUTOR_MEMORY=650m
+    SPARK_DRIVER_MEMORY=650m
+    SPARK_WORKER_MEMORY=650m
+    SPARK_DAEMON_MEMORY=650m
+ 
