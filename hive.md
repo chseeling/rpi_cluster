@@ -62,19 +62,18 @@ Configuring:
         <name>datanucleus.autoCreateTables</name>
         <value>True</value>
     </property>
-<property>
-    <name>hive.metastore.schema.verification</name>
-    <value>false</value>
-</property>
-<property>
-  <name>hive.metastore.uris</name>
-  <value>thrift://192.168.50.1:9083</value>
-  <description>IP address (or fully-qualified domain name) and port of the metastore host</description>
-</property>
+    <property>
+         <name>hive.metastore.schema.verification</name>
+         <value>false</value>
+     </property>
+     <property>
+         <name>hive.metastore.uris</name>
+         <value>thrift://192.168.50.1:9083</value>
+         <description>IP address (or fully-qualified domain name) and port of the metastore host</description>
+     </property>
 </configuration>
 
 ```
-
 
 Installing the mysql-java connector:
 
