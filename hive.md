@@ -92,3 +92,6 @@ To launch hive metastore, run
 To check it is running use:
 
     ps -ef |grep -i metastore
+
+
+### Next [Install and Test Spark](https://github.com/chseeling/rpi_cluster/blob/master/Spark.md)
