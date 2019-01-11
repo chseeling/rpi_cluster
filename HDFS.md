@@ -34,6 +34,7 @@ ssh clustpi05 "sudo apt-get install oracle-java8-jdk -y"
 
 On all slave (data) nodes:
 
+    scp .bashrc clustpi05:.
     ssh clustpi05 "sudo mkdir -p /opt/hadoop_tmp/hdfs/datanode"
 
 On master (name) node
@@ -157,4 +158,8 @@ run on all nodes
 then re-format
 
     /opt/hadoop/bin/hdfs namenode -format
+    
+    
+### Next [Install and Test Hive](https://github.com/chseeling/rpi_cluster/blob/master/hive.md)
+
 
