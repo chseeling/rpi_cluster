@@ -67,7 +67,7 @@ Using your browser on a machine on your local network:
 
 ## Using the Spark Cluster
 
-Lauch PySpark
+Launch PySpark
 
     $ pyspark
 
