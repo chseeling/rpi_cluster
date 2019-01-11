@@ -157,4 +157,8 @@ run on all nodes
 then re-format
 
     /opt/hadoop/bin/hdfs namenode -format
+    
+    
+### Next [Install and Test Hive](https://github.com/chseeling/rpi_cluster/blob/master/hive.md)
+
 
