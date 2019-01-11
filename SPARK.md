@@ -38,9 +38,18 @@ Checking with hdfs dfs -ls
 Now configure spark:
 
     sudo vi /opt/spark/conf/spark-defaults.conf
-    
+```
     SPARK_EXECUTOR_MEMORY=650m
     SPARK_DRIVER_MEMORY=650m
     SPARK_WORKER_MEMORY=650m
     SPARK_DAEMON_MEMORY=650m
+```
  
+
+    sudo vi /opt/spark/conf/slaves
+ ```
+clustpi02
+clustpi03
+clustpi04
+clustpi05
+```
