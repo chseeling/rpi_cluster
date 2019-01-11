@@ -53,3 +53,14 @@ clustpi03
 clustpi04
 clustpi05
 ```
+
+Start the Spark cluster
+
+    sudo /opt/spark/sbin/start-master.sh
+    sudo /opt/spark/sbin/start-slaves.sh
+    
+Using your browser on a machine on your local network:
+
+    http://192.168.0.27:8080/
+    
+![Spark Web UI](https://github.com/chseeling/rpi_cluster/blob/master/images/SparkWebUI.PNG)
