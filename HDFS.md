@@ -3,6 +3,28 @@
 Following https://tech.marksblogg.com/billion-nyc-taxi-rides-spark-raspberry-pi.html
 
 
+Add the following to the .bashrc file, this includes the environment variabe for hive, spark:
+```
+# -- HADOOP ENVIRONMENT VARIABLES START -- #
+export HADOOP_HOME=/opt/hadoop
+export PATH=$PATH:/opt/hive/bin:/opt/spark/bin
+export PATH=$PATH:$HADOOP_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/sbin
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS=" -XX:-PrintWarnings -Djava.library.path=$HADOOP_HOME/lib/native"
+# -- HADOOP ENVIRONMENT VARIABLES END -- #
+export JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre
+export CLASSPATH=/opt/hive/lib/mysql-connector-java-8.0.13.jar
+export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native
+export SPARK_HOME=/opt/spark
+```
+
+
+
 For all nodes:
 ```
 ssh clustpi05 "sudo mkdir /opt/hadoop/ && sudo mkdir /opt/hadoop_tmp/"
