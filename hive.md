@@ -18,4 +18,13 @@ GRANT ALL PRIVILEGES ON *.* TO 'hive'@'localhost';
 FLUSH PRIVILEGES;
 exit;
 ```
-  
+Exit out of root account.
+
+Next installing Hive itself:
+```
+wget -c -O hive.tar.gz http://mirror.ventraip.net.au/apache/hive/hive-3.1.1/apache-hive-3.1.1-bin.tar.gz
+sudo mkdir -p /opt/hive 
+sudo tar xvf hive.tar.gz --directory=/opt/hive --exclude=apache-hive-3.1.1-bin/ql/src/test --strip 1
+```
+
+schematool -dbType mysql -initSchema
