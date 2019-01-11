@@ -17,7 +17,7 @@ The slaves nodes and the master node are connected via a switch and they form a 
 ## Part List
 
 5x
-* Raspberry Pi B+
+* Raspberry Pi 3B+
 * 64MB SD Card (Micro SDXC Memory Card)
 * USB-C to USB-A cable
 * Ethernet Patch Lan Cable (1 foot)
