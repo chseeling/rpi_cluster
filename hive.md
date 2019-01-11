@@ -37,3 +37,10 @@ Run to initialize schema in the DB
 To launch hive metastore, run
 
     hive --service metastore &
+    
+     2019-01-11 09:50:13: Starting Hive Metastore Server
+     ...
+       
+To check it is running use:
+
+    ps -ef |grep -i metastore
