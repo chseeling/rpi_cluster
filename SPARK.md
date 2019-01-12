@@ -37,14 +37,26 @@ Checking with hdfs dfs -ls
 
 Now configure spark:
 
-    sudo vi /opt/spark/conf/spark-defaults.conf
+    sudo vi /opt/spark/conf/spark-env.sh
 ```
-    SPARK_EXECUTOR_MEMORY=650m
-    SPARK_DRIVER_MEMORY=650m
-    SPARK_WORKER_MEMORY=650m
-    SPARK_DAEMON_MEMORY=650m
+SPARK_DRIVER_MEMORY=650m
+SPARK_WORKER_MEMORY=650m
+SPARK_DAEMON_MEMORY=650m
+HADOOP_CONF_DIR=/opt/haddop/etc/hadoop/
+PYSPARK_PYTHON=python3
 ```
  
+  sudo vi /opt/spark/conf/spark-defaults.conf
+```
+spark.master spark://clustpi01:7077
+spark.yarn.preserve.staging.files true
+spark.yarn.archive hdfs:///spark-libs/spark-libs.jar
+```
+
+Copy the spark-env.sh and spark-defaults.conf to the slave nodes
+
+    sudo scp spark-defaults.conf clustpi02:/opt/spark/conf/.
+    sudo scp spark-env.sh        clustpi02:/opt/spark/conf/.
 
     sudo vi /opt/spark/conf/slaves
  ```
