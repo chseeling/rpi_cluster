@@ -90,5 +90,12 @@ Checking if Hive metastore integration with Spark works:
 ![Hive metastore](https://github.com/chseeling/rpi_cluster/blob/master/images/Spark_HIVE_metastore.PNG)
 Note: The initial setup will not have the tables lsted here.
 
+### Installing Jupyter
+Following https://medium.freecodecamp.org/how-to-set-up-pyspark-for-your-jupyter-notebook-7399dd3cb389
 
-
+     sudo apt install python3-pip
+     pip3 install jupyter
+     export PATH=$PATH:~/.local/bin
+     jupyter notebook
+ 
+ Copy url to browser.
